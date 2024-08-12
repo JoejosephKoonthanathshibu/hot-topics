@@ -1,0 +1,332 @@
+/* Font setup */
+@import url('https://fonts.googleapis.com/css2?family=SerifFont:wght@400;700&family=SansSerifFont:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'SansSerifFont', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #fff;
+}
+#logo {
+    width: 6em;
+}
+
+header {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    background-color: #90d68d;
+    padding: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+article h2 {
+    font-family: "Rokkitt", serif;
+    color: rgb(111, 185, 97);
+}
+
+article img {
+    box-shadow: #273f2756 1px 5px 10px;
+}
+
+.reference {
+    margin: 2rem;
+}
+
+.Portfolio-title {
+    font-family: "Rokkitt", serif;
+}
+
+.portfolio p {
+    font-weight: 600;
+}
+
+figcaption {
+    font-weight: 600;
+}
+
+footer {
+    border-top: #90d68d solid 2px;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    color: #90d68d;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer .social-media a {
+    color: #90d68d;
+    text-decoration: none;
+}
+
+footer .social-media i {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 35rem) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    header p {
+        font-weight: 700;
+        font-family: "freude", sans-serif;
+        color: #90d68d;
+        font-size: 1.5em;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 0.5rem 0;
+        box-shadow: #273f2756 1px 5px 10px;
+        transition: 0.3s ease-in;
+    }
+
+    .navbar ul li:hover {
+        padding: 25px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em;
+    }
+    article h2 {
+        text-align: center;
+    }
+
+    article p {
+        text-align: justify;
+    }
+    .portfolio p {
+        text-align: center;
+    }
+
+    .Portfolio-title {
+        text-align: center;
+    }
+
+    .masthead {
+        display: none;
+    }
+}
+
+@media (min-width: 35rem) and (max-width: 80rem) {
+    body {
+        font-size: 1rem;
+    }
+
+    header p {
+        display: none;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 2em;
+        padding: 20px;
+        width: 100%;
+        box-shadow: #273f2756 1px 5px 10px;
+        transition: 0.3s ease-in;
+    }
+
+    .navbar ul li:hover {
+        padding: 25px;
+    }
+    article
+    {
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 2em;
+    }
+    article p
+    {
+        text-align: justify;
+    }
+    article figcaption
+    {
+        width: 80%;
+        text-align: left;
+    }
+    article h2 {
+        text-align: center;
+    }
+
+    .masthead {
+        background: linear-gradient(#8fd68d3c, #8fd68dd6), url("../img/Masthead.webp");
+        background-size: cover;
+        text-align: center;
+        padding: 30px;
+        color: #fff;
+    }
+    .Portfolio-title
+    {
+        text-align: center;
+    }
+    .portfolio
+    {
+        display: grid;
+        text-align: center;
+        grid-template-areas: "a b";
+        margin:2em;
+    }
+    .card1
+    {
+        grid-area: a;
+    }
+    .card2
+    {
+        grid-area: b;
+    }
+
+    .social-media
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 80rem) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    header p {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        width: 100%;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navbar ul li {
+        margin-bottom: 2em;
+        box-shadow: #273f2756 1px 5px 10px;
+        transition: 0.3s ease-in;
+        width: 200px;
+        text-align: center;
+    }
+
+    .navbar ul li:hover {
+        padding: 25px;
+    }
+
+    article {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75rem;
+    }
+
+    .masthead {
+        background: linear-gradient(#8fd68d3c, #8fd68dd6), url("../img/Masthead.webp");
+        background-size: cover;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .masthead h1 {
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    figure
+    {
+        display: flex;
+        flex-direction: column;
+        clear: both;
+        float: left;
+    }
+    article h2
+    {
+        margin-top: 3em;
+    }
+    .Portfolio-title
+    {
+        max-width: 81rem;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 2em;
+        margin-bottom: 2em;
+        color: #90d68d;
+    }
+    .portfolio
+    {
+        display: grid;
+        text-align: center;
+        grid-template-areas: "a b c";
+        max-width: 75em;
+        margin-left: auto;
+        margin-right: auto;
+        color: #90d68d;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 2em;
+    }
+    footer ul li i
+    {
+        padding-right: 2em;
+    }
+
+}
+
